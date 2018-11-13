@@ -10,7 +10,7 @@ LABEL com.github.actions.description="Publishes test results to AzDevOps for awe
 LABEL com.github.actions.icon="package"
 LABEL com.github.actions.color="red"
 
-#COPY "entrypoint.sh" "/entrypoint.sh"
+COPY "entrypoint.sh" "/entrypoint.sh"
 #ENTRYPOINT ["/entrypoint.sh"]
 ENTRYPOINT ["sh", "/entrypoint.sh"]
 #ENTRYPOINT echo "Hello world"
