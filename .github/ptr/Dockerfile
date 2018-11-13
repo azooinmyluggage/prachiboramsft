@@ -12,5 +12,6 @@ LABEL com.github.actions.color="red"
 
 #COPY "entrypoint.sh" "/entrypoint.sh"
 #ENTRYPOINT ["/entrypoint.sh"]
+#ENTRYPOINT ["sh", "/entrypoint.sh"]
 ENTRYPOINT echo "Hello world"
 
